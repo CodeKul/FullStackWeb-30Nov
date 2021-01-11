@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            width:90%;
+            margin:0 auto;
+        }
+        .one{
+            background-color:cadetblue;
+            height:200px;
+            width:200px;
+            margin:10px;
+            transition:transform 1s ease ;
+            /* transition-delay:2s;
+            transition-duration: 1s;
+            transition-property: transform;
+            transition-timing-function: ease-in; */
+        }
+.one:hover{
+    /* height: 500px; */
+    transform:translate(300px,300px);
+    /* transform:skewX(40deg); */
+    /* transform:rotateY(50deg); */
+    
+}
+
+        .two{
+           
+            background-color:yellowgreen;
+            height:200px;
+            width:200px;
+            margin:10px;
+        
+        }
+        .three{
+           
+           background-color:rebeccapurple;
+           height:200px;
+           width:200px;
+           margin:10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            one
+        </div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+</body>
+</html>

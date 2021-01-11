@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        /* :link , :visited, :hover,:active,:focus,:first-child */
+        a:link{
+            color:crimson;
+        }
+        a:visited{
+            color:darkgreen;
+        }
+        a:hover{
+            color:darkorange;
+        }
+        a:active{
+            color:deeppink;
+        }
+
+
+        input:focus{
+            color:red;
+        }
+
+        li:first-of-type{
+            border:2px solid rebeccapurple;
+        }
+
+        li:last-of-type{
+            background-color: blueviolet;
+        }
+
+
+        li:nth-child(2){
+            border:3px dashed yellowgreen;
+        }
+
+        li:nth-of-type(2){
+            border: 3px solid red;
+        }
+
+        /* li:nth-last-child(3){
+            background-color: yellowgreen;
+        } */
+        li:nth-last-of-type(3){
+            background-color: yellowgreen;
+        }
+
+        /* span:only-of-type{
+            background-color: thistle;
+        } */
+
+        p span:only-child{
+            border: 2px solid royalblue;
+        }
+
+        
+   
+
+/* Pseudo elements - ::after ,::before */
+
+ul.list-two li::after{
+text-decoration:none;
+content:url("./bullet.PNG");
+  
+}
+
+span:hover{
+    cursor:pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+
+
+        <a href="http://www.google.com/">Click here</a><br>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text">
+        </form>
+
+        <ul>
+            <!-- <p>lorem ipsum</p> -->
+            <li>India</li>
+            <li>USA</li>
+            <li>China</li>
+            <!-- <p>lorem ipsum</p>
+            <p>lorem ipsum</p> -->
+            <li>Japan</li>
+
+            <li>Korea</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iusto quo quae itaque, quisquam corrupti explicabo cumque sequi tempora est ut illo sit quasi alias ex rem, eos laudantium esse!</p>
+        <span>Hello Word</span>
+        <p><span>Hello only child</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempora dignissimos non quam alias fuga error quo, veritatis accusamus cupiditate quod ut! Expedita quam beatae nesciunt, reprehenderit assumenda magni voluptatibus.</p>
+
+            <ul class="list-two">
+                <li>Pune</li>
+                <li>Mumbai</li>
+                <li>Nasik</li>
+            </ul>
+    </div>
+
+</body>
+</html>

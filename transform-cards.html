@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{
+        width:90%;
+        margin:0 auto;
+    }
+    .cards{
+        display:flex;
+        
+        
+    }
+    .card-one{
+        height:200px;
+        width:150px;
+        padding:20px;
+        background-color: rosybrown;
+        margin:10px;
+        /* transition:transform 1.5s; */
+    }
+
+    .card-one:hover,.card-two:hover,.card-three:hover{
+        transform:scale(1.2);
+        /* transform:translate(5px,5px) ; */
+        transition:transform 1.5s;
+    }
+    .card-two{
+        height:200px;
+        width:150px;
+        padding:20px;
+        background-color: seagreen;
+        margin:10px;
+        
+    }
+    .card-three{
+        height:200px;
+        width:150px;
+        padding:20px;
+        background-color: rosybrown;
+        margin:10px;
+        /* transition:transform 1.5s; */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="card-one">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione vero, aliquid animi at, nobis sapiente quod, dolore cum veritatis iusto? Nulla quasi voluptas sunt!</p>
+            </div>
+            <div class="card-two">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos non reprehenderit veritatis cum recusandae similique aliquid atque rem explicabo?</p>
+            </div>
+            <div class="card-three">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eos non reprehenderit veritatis cum recusandae similique aliquid atque rem explicabo?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

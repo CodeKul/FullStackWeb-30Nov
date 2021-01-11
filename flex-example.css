@@ -1,0 +1,72 @@
+body {
+  font-size: 18px; /*18px   1.125rem*/
+  color: #707070;
+  margin: 0;
+}
+/* Typography */
+h1 {
+  font-size: 48px; /*48px 3rem*/
+  color: #212614;
+  text-align: center;
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+h2 {
+  font-size: 24px; /*24px   1.5rem*/
+}
+
+p {
+  margin-top: 0;
+}
+
+.col-bg {
+  background: #212614;
+
+  color: #fff;
+  padding: 16px; /*16px*/
+  margin: 16px 0; /*16px*/
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 70%;
+}
+
+/* Layout */
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .columns {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
+}
+
+img {
+  width: 100%;
+  margin: auto;
+}

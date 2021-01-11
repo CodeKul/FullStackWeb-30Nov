@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:80%;
+            background-color: lightgray;
+            padding:10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item1{
+            background-color: cadetblue;
+            padding:10px;
+            order:1;
+            /* flex-grow:2; */
+            flex-shrink:1;
+            flex-basis:100px;
+
+        }
+        .item2{
+            background-color: greenyellow;
+            padding:10px;
+            order:2;
+            /* flex-grow:1; */
+            width:300px;
+            flex-grow:1;
+            flex-shrink:1;
+            flex-basis:100px;
+        }
+        .item3{
+            background-color: cadetblue;
+            padding:10px;
+            order:3;
+            /* flex-grow: 1; */
+            flex-basis:100px;
+            /* flex:1 0 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Welcome</div>
+        <div class="item2">to</div>
+        <div class="item3">2021!!</div>
+
+    </div>
+</body>
+</html>

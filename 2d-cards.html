@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+        }
+    .card-one,.card-two{
+        height: 200px;
+        width:300px;
+        margin:10px;
+        background-color:cadetblue;
+    }
+    .card-one:hover,.card-two:hover{
+        /* transform:scale(1.1); */
+        transform:translate(5px,5px);
+        transition:transform 2s;
+    }
+    img{
+        width:100%;
+        
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card-one">
+            <img src="blog-writing.jpg" height=200 width=200>
+        </div>
+        <div class="card-two">
+            Two
+        </div>
+    </div>
+</body>
+</html>
