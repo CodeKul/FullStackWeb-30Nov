@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter a number</label>
+   <input type="number" id="n1">
+
+   <label>Enter another number</label>
+   <input type="number" id="n2">
+
+   <p id="total"></p>
+   <p class="pone">Hello World</p>
+  
+   <span id="display"></span>
+
+   <button onclick="addition()">Add</button>
+
+   <script>
+       function addition(){
+           let num1 = document.getElementById("n1").value
+           let num2 =document.getElementById("n2").value
+            //getElementById,getElementsByTagName,querySelector(p#total)
+            //
+           document.getElementById("total").innerHTML= +num1 + +num2
+           
+       }
+       
+       var x = document.getElementsByTagName("p")
+      
+      
+        //console.log(x[1].innerHTML)
+    //   for(let i=0;i< x.length;i++){
+    //       documnent.getElementById("display").innerHTML = x[i]
+
+    //     }
+    //    alert("Hello World")
+    //    confirm("Are you sure you want to delete")
+    //    prompt("Enter a number")
+   </script>
+</body>
+</html>
