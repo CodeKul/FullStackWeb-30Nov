@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="quotes"></p>
+    <script>
+        const div =document.createElement('div')
+        const p= document.createElement('p')
+       // div.append(p)
+       div.appendChild(p)
+        // p.innerText="<b>Inside P</b>"
+        p.innerHTML="<b>Inside P</b>"
+        const body=document.body
+        body.append(div)
+
+        const quotes=[{
+            quote:"",
+            author:""
+        },{},{}]
+
+
+
+    </script>
+</body>
+</html>
