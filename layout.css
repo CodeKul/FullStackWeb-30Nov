@@ -2,9 +2,11 @@
   text-align: center;
 }
 
-.navbar {
+ .navbar {
   height: 50px;
   background: whitesmoke;
+  position:sticky;
+  top:0;
 }
 
 ul.navbar > li {
@@ -23,8 +25,6 @@ ul.navbar > li {
 .footer {
   background: whitesmoke;
   width: 100%;
-  position: absolute;
-  top: 85%;
   margin-top: 10px;
   text-align: center;
 }
