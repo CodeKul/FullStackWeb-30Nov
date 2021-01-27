@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let body= document.body
+        let div = document.createElement('div')
+        console.log(div)
+        body.append(div)
+        div.innerHTML="I am a div"
+        let p = document.createElement('p')
+        div.append("Hello")
+        div.appendChild(p)
+        p.innerHTML="<i>Inside P</i>"
+    </script>
+</body>
+
+</html>

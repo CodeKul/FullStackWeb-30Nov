@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="pOne" name="pName" class="pClass">Hello World</p>
+        <p id="pTwo" name="pName" class="pClass">Hello</p>
+    </div>
+    <script>
+        //getElementById,getElementsByTagName,getElementsByClassName,getElementsByName
+        //querySelector(),querySelectorAll()
+
+        //let p=document.getElementsByTagName('p')
+        //let p=document.getElementsByClassName('pClass')
+        // let p=document.getElementsByName('pName')
+        let p =document.querySelectorAll("div>p")
+        
+        console.log(p)
+        p.innerHTML="<b>Inside innerHTML</b>"
+    </script>
+</body>
+</html>
