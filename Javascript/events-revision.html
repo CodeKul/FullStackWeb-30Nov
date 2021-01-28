@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <p id="one"></p>
+    <p id="two"></p>
+
+    <script>
+        // function show(){
+        //     document.getElementById('one').innerHTML="Button Clicked"
+        // }
+
+        let button = document.getElementById('btn')
+        button.addEventListener('click',(e)=>{
+            e.stopImmediatePropagation()
+            document.getElementById('one').innerHTML="Button Clicked"
+        })
+
+        button.addEventListener('click',()=>{
+            document.getElementById('two').innerHTML="Second Event"
+        })
+
+        //Capturing and Bubbling
+
+    </script>
+</body>
+</html>

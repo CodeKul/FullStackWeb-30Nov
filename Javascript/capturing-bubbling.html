@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#one{
+            width: 200px;
+            height:200px;
+            background-color: gray;
+            
+        }
+        div#two{
+            width: 100px;
+            height:100px;
+            background-color: green;
+            
+        }
+        p{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div id="one" onclick="outerDiv()">
+        <div id="two" onclick="show()">
+            <p id="pOne" onclick="display()">P</p>
+        </div>
+    </div> -->
+    
+    <div id="one" >
+        <div id="two" >
+            <p id="pOne">P</p>
+        </div>
+    </div>
+    <script>
+
+        //Event Propagation - capturing and Bubbling
+        let divOuter = document.getElementById('one')
+        let divInner = document.getElementById('two')
+        let p = document.getElementById('pOne') 
+        divOuter.addEventListener('click',outerDiv)
+        divInner.addEventListener('click',show)
+        p.addEventListener('click',display)
+        function outerDiv(){
+            console.log("Outer Div")
+        }
+        function show(){
+            console.log("Inner Div")
+        }
+        function display(e){
+            e.stopPropagation()
+            console.log("Innermost P")
+        }
+    </script>
+</body>
+</html>
