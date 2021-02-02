@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function wish(name,age,show){
+            console.log('Good Morning' + name + age)
+            show(show1)
+        }
+       setTimeout(wish,3000,'ABC',20,show)
+       function show(callback){
+           console.log('Inside show')
+            callback()
+       }
+
+       function show1(){
+           console.log('Inside show1')
+       }
+
+      
+    </script>
+</body>
+</html>
