@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiply(x,y){
+            let output = x*y
+            let promise = new Promise(
+                function(resolve,reject){
+                    if(output>0){
+                        resolve(output)
+                    }else{
+                        reject('Please try once more')
+                    }
+                }
+            )
+            return promise
+        }
+
+        // multiply(50,50)
+        // .then(
+        //     function(output){
+        //         output = output+3000
+        //         return output
+        //     }
+        // ).then(
+        //     function(output){
+        //         console.log(output)
+        //     }
+        // ).catch(
+        //     function(response){
+        //         console.log(response)
+        //     }
+        // )
+       function display(response){
+            
+            console.log(response)
+        }
+        //async functions always return a promise
+        //await cannot be used with async
+  async function handleMultiplication(){
+     try{
+        console.log("Calling multiply")
+        let response=await multiply(50,50)
+        let result = await display(response)
+        
+        return result
+      }catch(err){
+          console.log(err)
+      }
+       
+    }
+
+    handleMultiplication()
+
+    </script>
+</body>
+</html>
