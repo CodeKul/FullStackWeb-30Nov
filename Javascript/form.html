@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- firstName,lastName,city,gender,checkbox -->
+    <form>
+        <div>
+        <label>FirstName</label>
+        <input type="text" id="firstname">
+        </div>
+        <div>
+        <label>LastName</label>
+        <input type="text" id="lastname">
+        </div>
+        <div>
+        <label>City</label>
+        <select name="city" id="city">
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Thane">Thane</option>
+        </select>
+        </div>
+        <div>
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label>Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label>Female</label>
+            </div>
+        <div>    
+        <label>Active</label>
+        <input type="checkbox" id="active" value="Yes">
+        <label>Yes</label><br>
+    </div>
+    <div>
+        <button id="btn" type="button" onclick="displayValues()">Get Values</button>
+    </div>
+    </form>
+    <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+    <script>
+        function displayValues(){
+            var firstName = document.getElementById("firstname").value
+            var lastName = document.getElementById("lastname").value
+            var city = document.getElementById("city").value
+            var gender = document.getElementsByName("gender")
+        //    if(gender[0].checked){
+        //        var genderValue = gender[0].value
+        //    }else{
+        //        var gendervalue =gender[1].value
+        //    }
+        //    console.log(genderValue)
+
+        for(let i =0;i<gender.length;i++){
+            if(gender[i].checked){
+               var genderValue = gender[i].value
+               break;
+            }
+        }
+        console.log(genderValue)
+        
+        if(document.getElementById("active").checked){
+            var activeStatus = document.getElementById("active").value
+        }else{
+            var x= document.getElementById("active").value ="No"
+            activeStatus = x
+        }
+        
+
+        let formData = {
+            firstName:firstName,
+            lastName:lastName,
+            city:city,
+            gender:genderValue,
+            active:activeStatus
+            
+        }
+        console.log(formData)
+       document.write(formData.firstName)
+
+    }    
+    </script>
+</body>
+</html>
