@@ -14,24 +14,35 @@ function userValues() {
     title: title,
     completed: completed,
   });
-  //console.log(userData);
-  return userData;
+  console.log(userData);
+  //return userData;
 }
 
 function save() {
   let user = userValues();
-  //   fetch("https://jsonplaceholder.typicode.com/posts", {
-  //     method: "POST",
-  //     body: user,
-  //     headers: { "Content-Type": "application/json" },
-  //   }).then((response) => {
-  //     console.log(response.json());
-  //   });
-
   fetch("https://jsonplaceholder.typicode.com/posts", {
-    method: "GET",
+    method: "POST",
+    body: user,
     headers: { "Content-Type": "application/json" },
   }).then((response) => {
     console.log(response.json());
   });
+
+  fetch("https://jsonplaceholder.typicode.com/todos", {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  }).then((response) => {
+    let result = response.json();
+    // let output = JSON.parse(result);
+    // output.title = "Hello World";
+    console.log(result);
+  });
 }
+
+// function jsonString() {
+// let person = '{firstName:"ABC",lastName:"XYZ"}';
+// let jsPerson = JSON.parse(person);
+// jsPerson.firstName = "qaz";
+// console.log(jsPerson);
+// }
+// jsonString();
