@@ -39,34 +39,34 @@ function save() {
       return arr;
     })
     .then((arr) => {
-      //let tblShow;
-      //   arr.forEach((element) => {
-      //     tblShow = `<table>
-      //       <tr>
-      //         <th>UserID</th>
-      //         <th>Title</th>
-      //     </tr>
-      //     <tr>
-      //     <td>${element.userId}</td>
-      //     <td>${element.title}</td>
-      //     </tr>
-
-      //       </table>`;
-      //   });
-
-      arr.map((item) => {
-        tblShow = `<table>
+      let tblShow;
+        arr.forEach((element) => {
+          tblShow = `<table>
+            <tr>
+              <th>UserID</th>
+              <th>Title</th>
+          </tr>
           <tr>
-            <th>UserID</th>
-            <th>Title</th>
-        </tr>
-        <tr>
-        <td>${item.userId}</td>
-        <td>${item.title}</td>
-        </tr>
+          <td>${element.userId}</td>
+          <td>${element.title}</td>
+          </tr>
+
+            </table>`;
+        });
+     
+      // arr.map((item) => {
+      //   tblShow = `<table>
+      //     <tr>
+      //       <th>UserID</th>
+      //       <th>Title</th>
+      //   </tr>
+      //   <tr>
+      //   <td>${item.userId}</td>
+      //   <td>${item.title}</td>
+      //   </tr>
             
-          </table>`;
-      });
+      //     </table>`;
+      //});
       document.getElementById("tbl").innerHTML = tblShow;
     });
 }
