@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        i{
+        color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <i class="fa fa-bell-o fa-3x bg-color" aria-hidden="true"></i>
+    <script>
+    let arr = ["Hi","Hello",400,100,"Good","Morning"]
+
+    let [...other] = arr
+    console.log(other)
+
+    let [x,y]="Hello"
+    console.log(x,y)
+
+    let options ={
+        title:"Technologies",
+        total:200,
+        width:500,
+    }
+
+    let {title,width}=options
+    console.log(title,width)
+
+
+let {name,value}=e.target
+e.target.name =e.target.value
+
+    </script>
+</body>
+</html>
