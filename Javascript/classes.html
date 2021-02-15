@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let options={
+            x:100,
+            y:200
+        }
+        console.log(options)
+        console.log(options.__proto__)
+        console.log(options.__proto__.__proto__)
+        let arr=[10,30,50]
+        console.log(arr)
+        console.log(arr.__proto__)
+        console.log(arr.__proto__.__proto__)
+        
+        class Person{
+            constructor(personName,id){
+                this.personName=personName
+                this.id=id
+            }
+            getInfo(){
+                console.log(this.personName,this.id)
+            }
+
+
+    }
+    //Inheritance
+    class Employee extends Person
+    {
+        constructor(personName,id,salary,companyName){
+            super(personName,id)
+            this.salary=salary
+            this.companyName=companyName
+        }
+        getEmpInfo(){
+            console.log(this.personName,this.salary)
+        }
+
+    }
+    let p=new Person("JOhn",100)
+    let p1 =new Person("ABC",101)
+    p1.getInfo()
+
+    let X = new Employee("X",102,10000,"qaz")
+    X.getEmpInfo()
+    </script>
+</body>
+</html>
