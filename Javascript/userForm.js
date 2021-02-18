@@ -32,10 +32,10 @@ function save() {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   }).then((response) => {
-    let result = response.json();
+    //let result = response.json();
     // let output = JSON.parse(result);
     // output.title = "Hello World";
-    console.log(result);
+    console.log(response);
   });
 }
 
