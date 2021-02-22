@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import {calculate,hello,greeting,employee} from './main.js'
+        import User from './useMain.js'
+        var result = calculate(40,60)
+        console.log(result)
+
+        greeting()
+        console.log(employee)
+        hello()
+
+        let abc = new User("Pune","ABC","IT")
+        let john = new User("Pune","John","Sales")
+        let userInfo = abc.getUserInfo()
+        console.log(userInfo)
+
+        let deptName = abc.getDept()
+        let jDeptName= john.getDept()
+        console.log(jDeptName)
+    </script>
+</body>
+</html>
