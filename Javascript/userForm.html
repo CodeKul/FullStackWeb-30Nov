@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -19,10 +24,13 @@
         <label>Completed</label><br><br>
         <button type="button" onclick="save()">Send data</button>
     
-        <div class="tableData" id="tbl"></div>
+        <div class="tableData" id="tbl">
+            
+        </div>
     </form>
+    <!-- <script src="axios.js"></script> -->
     <script src="userForm.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
     <script>
         // function save(){
         // var person = '{"firstName":"ABC","lastName":"XYZ"}';

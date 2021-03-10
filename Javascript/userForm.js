@@ -26,9 +26,10 @@ function save() {
     headers: { "Content-Type": "application/json" },
   }).then((response) => {
     console.log(response.json());
+    //console.log(typeof response);
   });
 
-  fetch("https://jsonplaceholder.typicode.com/todos", {
+  fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   }).then((response) => {

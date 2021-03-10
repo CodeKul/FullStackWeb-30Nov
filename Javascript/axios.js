@@ -34,26 +34,33 @@ function save() {
     })
     .then((response) => {
       console.log(response);
+     
       let arr = response.data;
+      // let arr =response.json()
       console.log(arr);
       return arr;
     })
     .then((arr) => {
-      let tblShow;
-        arr.forEach((element) => {
-          tblShow = `<table>
-            <tr>
-              <th>UserID</th>
+      let tblShow = `<table>
+      <tr>
+              <th>Body</th>
+              <th>ID</th>
               <th>Title</th>
+              <th>User Id</th>
           </tr>
-          <tr>
-          <td>${element.userId}</td>
-          <td>${element.title}</td>
-          </tr>
+        `;
 
-            </table>`;
-        });
-     
+      arr.map((element) => {
+        tblShow += `<tr>
+          <td>${element.body}</td>
+          <td>${element.id}</td>
+          <td>${element.title}</td>
+          <td>${element.userId}</td>
+          </tr>
+          `;
+      });
+      document.getElementById("tbl").innerHTML = tblShow;
+
       // arr.map((item) => {
       //   tblShow = `<table>
       //     <tr>
@@ -64,9 +71,8 @@ function save() {
       //   <td>${item.userId}</td>
       //   <td>${item.title}</td>
       //   </tr>
-            
+
       //     </table>`;
       //});
-      document.getElementById("tbl").innerHTML = tblShow;
     });
 }
