@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>User Id</label>
+        <input type="number" id="userid"><br><br>
+        <label>Id</label>
+        <input type="number" id="id"><br><br>
+        <label>title</label>
+        <input type="text" id="title"><br><br>
+        <label>Completion status</label><br><br>
+        <input type="checkbox" id="complete" value="Completed">
+        <label>Completed</label><br><br>
+        <button type="button" onclick="sendData()">Send data</button>
+        <button type="button" onclick="getData()">Get data</button>
+        <p id="msg"></p>
+        <div class="tableData" id="tbl">
+            
+        </div>
+    </form>
+    <script src="xml.js"></script>
+</body>
+</html>
