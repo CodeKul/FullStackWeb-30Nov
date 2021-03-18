@@ -6,6 +6,7 @@ import Employee from "./Employee";
 import TableComponent from "./TableComponent";
 import Clock from "./Clock";
 import FunComponent from "./FunComponent";
+import Message from "./Message";
 function App() {
   let a = 10;
   let b = 20;
@@ -13,16 +14,21 @@ function App() {
   let numbers = [100, 40, "Hello"];
   let person = { firstName: "JOhn", city: "Pune" };
   let employee = { salary: 40000, empid: 100 };
+  let isActive = false;
   return (
     <div>
-      <h1>React Application</h1>
-      <p>The total is: {total}</p>
-      <DisplayComponent />
+      {/* <h1>React Application</h1>
+      <p>The total is: {total}</p> */}
+      {/* <DisplayComponent />
       <NewComponent />
       <Employee person={person} employee={employee} numbers={numbers} />
       <TableComponent />
-      <Clock message="Hello Its" />
-      <FunComponent employee={employee} lastName="XYZ" />
+      <Clock message="Hello Its" /> */}
+      {/* <FunComponent employee={employee} lastName="XYZ" />
+      
+      */}
+
+      <Message status={isActive} />
     </div>
   );
 }
