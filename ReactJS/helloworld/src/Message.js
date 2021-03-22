@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import Active from "./Active";
 import InActive from "./InActive";

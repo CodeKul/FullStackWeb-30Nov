@@ -7,6 +7,7 @@ import TableComponent from "./TableComponent";
 import Clock from "./Clock";
 import FunComponent from "./FunComponent";
 import Message from "./Message";
+import LoginStatus from "./LoginStatus";
 function App() {
   let a = 10;
   let b = 20;
@@ -15,6 +16,7 @@ function App() {
   let person = { firstName: "JOhn", city: "Pune" };
   let employee = { salary: 40000, empid: 100 };
   let isActive = false;
+  let isLoggedIn = true;
   return (
     <div>
       {/* <h1>React Application</h1>
@@ -28,7 +30,8 @@ function App() {
       
       */}
 
-      <Message status={isActive} />
+      {/* <Message status={isActive} /> */}
+      <LoginStatus />
     </div>
   );
 }

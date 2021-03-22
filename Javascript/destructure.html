@@ -31,10 +31,15 @@
             id:100
         },
         width:500,
+        getInfo:()=>{
+            options.employee.salary=options.employee.salary+100
+            console.log(options.employee.salary)
+        }
     }
 
     let {lastName,employee}=options
     console.log(employee)
+    options.getInfo()
 
 
 // let {name,value}=e.target
