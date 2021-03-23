@@ -8,6 +8,7 @@ import Clock from "./Clock";
 import FunComponent from "./FunComponent";
 import Message from "./Message";
 import LoginStatus from "./LoginStatus";
+import Counter from "./Counter";
 function App() {
   let a = 10;
   let b = 20;
@@ -32,6 +33,7 @@ function App() {
 
       {/* <Message status={isActive} /> */}
       <LoginStatus />
+      <Counter />
     </div>
   );
 }
