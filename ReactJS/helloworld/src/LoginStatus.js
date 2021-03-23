@@ -7,6 +7,7 @@ class LoginStatus extends React.Component {
     super();
     this.state = {
       isLoggedIn: false,
+      
     };
   }
   loginClick = () => {
