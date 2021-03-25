@@ -32,7 +32,7 @@ function App() {
       */}
 
       {/* <Message status={isActive} /> */}
-      <LoginStatus />
+      {/* <LoginStatus /> */}
       <Counter />
     </div>
   );
