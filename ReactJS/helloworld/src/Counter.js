@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Counter() {
   // const [hookName, setHookName] = useState("usestate ");
@@ -13,13 +13,23 @@ function Counter() {
   //   (prevstate)=>prevstate + "useeffect "
   // );
   //}
+
   const [counter, setCounter] = useState(0);
+  const [city, SetCity] = useState("");
+  useEffect(() => {
+    console.log("useeffect");
+  }, [city]);
+
   const updateCounter = () => {
     setCounter((prevstate) => prevstate + 1);
   };
 
   const reduceCounter = () => {
     setCounter((prevstate) => prevstate - 1);
+  };
+
+  const changeCity = () => {
+    SetCity((prevstate) => prevstate + "Pune");
   };
   return (
     <div>
@@ -34,6 +44,8 @@ function Counter() {
         <p>{counter}</p>
         <button onClick={updateCounter}>Increment</button>
         <button onClick={reduceCounter}>Decrement</button>
+        <p>{city}</p>
+        <button onClick={changeCity}>CityUpdate</button>
       </div>
     </div>
   );
