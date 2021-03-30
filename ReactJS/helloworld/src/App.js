@@ -9,6 +9,8 @@ import FunComponent from "./FunComponent";
 import Message from "./Message";
 import LoginStatus from "./LoginStatus";
 import Counter from "./Counter";
+import UseEffectComponent from "./UseEffectComponent";
+import CovidCount from "./CovidCount";
 function App() {
   let a = 10;
   let b = 20;
@@ -33,7 +35,11 @@ function App() {
 
       {/* <Message status={isActive} /> */}
       {/* <LoginStatus /> */}
-      <Counter />
+      {/* <Counter /> */}
+
+      {/* <UseEffectComponent /> */}
+
+      <CovidCount />
     </div>
   );
 }
