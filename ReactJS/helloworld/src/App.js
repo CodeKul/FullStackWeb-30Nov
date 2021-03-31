@@ -11,6 +11,8 @@ import LoginStatus from "./LoginStatus";
 import Counter from "./Counter";
 import UseEffectComponent from "./UseEffectComponent";
 import CovidCount from "./CovidCount";
+import RefComponent from "./RefComponent";
+import StopWatchRef from "./StopWatchRef";
 function App() {
   let a = 10;
   let b = 20;
@@ -39,7 +41,10 @@ function App() {
 
       {/* <UseEffectComponent /> */}
 
-      <CovidCount />
+      {/* <CovidCount /> */}
+
+      {/* <RefComponent/> */}
+      <StopWatchRef />
     </div>
   );
 }
