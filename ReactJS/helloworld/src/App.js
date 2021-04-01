@@ -13,6 +13,7 @@ import UseEffectComponent from "./UseEffectComponent";
 import CovidCount from "./CovidCount";
 import RefComponent from "./RefComponent";
 import StopWatchRef from "./StopWatchRef";
+import RefInputFocus from "./RefInputFocus";
 function App() {
   let a = 10;
   let b = 20;
@@ -43,8 +44,9 @@ function App() {
 
       {/* <CovidCount /> */}
 
-      {/* <RefComponent/> */}
+      {/* <RefComponent /> */}
       <StopWatchRef />
+      <RefInputFocus />
     </div>
   );
 }
