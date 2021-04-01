@@ -34,6 +34,21 @@
             grid-row:2/4;
         }
 
+
+        .parent{
+            border:1px solid blue;
+            display: flex;
+
+        }
+        .a{
+            flex-grow: 1;
+        }
+        .b{
+            flex-shrink:0;
+        }
+        
+
+        
         
     </style>
 </head>
@@ -47,5 +62,12 @@
         <div class="item e">5</div>
         <div class="item f">6</div>
     </div>
+
+    <div class="parent">
+        <div class="item a">ITem 1</div>
+        <div class="item b">ITem 2</div>
+        <div class="item c">ITem 3</div>
+    </div>
+
 </body>
 </html>

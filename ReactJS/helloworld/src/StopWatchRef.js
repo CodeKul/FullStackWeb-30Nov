@@ -11,14 +11,21 @@ function StopWatchRef() {
   };
   const stopCounter = () => {
     clearInterval(timerId.current);
-    timerId.current=0
+    timerId.current = 0;
     console.log(timerId.current);
   };
-return (
+
+  const resetCounter = () => {
+    clearInterval(timerId.current);
+    setCount(0);
+  };
+
+  return (
     <div>
       <p>{count}</p>
       <button onClick={startCounter}>Start</button>
       <button onClick={stopCounter}>Stop</button>
+      <button onClick={resetCounter}>Reset</button>
     </div>
   );
 }
