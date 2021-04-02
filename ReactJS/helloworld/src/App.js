@@ -14,6 +14,7 @@ import CovidCount from "./CovidCount";
 import RefComponent from "./RefComponent";
 import StopWatchRef from "./StopWatchRef";
 import RefInputFocus from "./RefInputFocus";
+import RegistrationForm from "./RegistrationForm";
 function App() {
   let a = 10;
   let b = 20;
@@ -45,8 +46,10 @@ function App() {
       {/* <CovidCount /> */}
 
       {/* <RefComponent /> */}
-      <StopWatchRef />
-      <RefInputFocus />
+      {/* <StopWatchRef />
+      <RefInputFocus /> */}
+
+      <RegistrationForm />
     </div>
   );
 }
