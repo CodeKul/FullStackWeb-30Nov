@@ -5,6 +5,8 @@ function RegistrationForm() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
+  const [city, setCity] = useState("");
+  const [isActive, setIsActive] = useState(false);
 
   const getFirstName = (e) => {
     setFirstName(e.target.value);
@@ -20,6 +22,18 @@ function RegistrationForm() {
 
   const getGender = (e) => {
     setGender(e.target.value);
+  };
+
+  const handleCity = (e) => {
+    setCity(e.target.value);
+  };
+
+  const handleActive = (e) => {
+    setIsActive(e.target.checked);
+  };
+
+  const handleClick = () => {
+    console.log(firstName, lastName, email, city, gender, isActive);
   };
 
   return (
@@ -71,6 +85,31 @@ function RegistrationForm() {
       />
       <label className="form-label">Female</label>
       <p>{gender}</p>
+
+      <label htmlFor="city">Select City</label>
+      <select name="city" value={city} onChange={handleCity}>
+        <option value="" selected>
+          Choose
+        </option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Thane">Thane</option>
+        <option value="Nashik">Nashik</option>
+      </select>
+      <p>{city}</p>
+
+      <input
+        type="checkbox"
+        name="isActive"
+        checked={isActive}
+        value={isActive}
+        onChange={handleActive}
+      />
+      <label htmlFor="Active"> Are you active</label>
+      <p>{isActive}</p>
+
+      <button type="button" onClick={handleClick}>
+        Get Info
+      </button>
     </div>
   );
 }
