@@ -15,6 +15,8 @@ import RefComponent from "./RefComponent";
 import StopWatchRef from "./StopWatchRef";
 import RefInputFocus from "./RefInputFocus";
 import RegistrationForm from "./RegistrationForm";
+import StateandRef from "./StateandRef";
+import Forms from "./Forms";
 function App() {
   let a = 10;
   let b = 20;
@@ -49,7 +51,11 @@ function App() {
       {/* <StopWatchRef />
       <RefInputFocus /> */}
 
-      <RegistrationForm />
+      {/* <RegistrationForm /> */}
+
+      {/* <StateandRef /> */}
+      {/* <StopWatchRef /> */}
+      <Forms />
     </div>
   );
 }
