@@ -17,6 +17,8 @@ import RefInputFocus from "./RefInputFocus";
 import RegistrationForm from "./RegistrationForm";
 import StateandRef from "./StateandRef";
 import Forms from "./Forms";
+import Styling from "./Styling";
+import DemoCSSModules from "./DemoCSSModules";
 function App() {
   let a = 10;
   let b = 20;
@@ -55,7 +57,12 @@ function App() {
 
       {/* <StateandRef /> */}
       {/* <StopWatchRef /> */}
-      <Forms />
+      {/* <Forms /> */}
+
+      {/* <Styling/> */}
+
+      <DemoCSSModules />
+      <button className="button">Another Button</button>
     </div>
   );
 }
