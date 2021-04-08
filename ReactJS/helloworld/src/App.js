@@ -19,50 +19,40 @@ import StateandRef from "./StateandRef";
 import Forms from "./Forms";
 import Styling from "./Styling";
 import DemoCSSModules from "./DemoCSSModules";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./routeComponents/Home";
+import About from "./routeComponents/About";
+import ContactUs from "./routeComponents/ContactUs";
+import Navbar from "./routeComponents/Navbar";
 function App() {
-  let a = 10;
-  let b = 20;
-  let total = a + b;
-  let numbers = [100, 40, "Hello"];
-  let person = { firstName: "JOhn", city: "Pune" };
-  let employee = { salary: 40000, empid: 100 };
-  let isActive = false;
-  let isLoggedIn = true;
+  // let a = 10;
+  // let b = 20;
+  // let total = a + b;
+  // let numbers = [100, 40, "Hello"];
+  // let person = { firstName: "JOhn", city: "Pune" };
+  // let employee = { salary: 40000, empid: 100 };
+  // let isActive = false;
+  // let isLoggedIn = true;
   return (
     <div>
-      {/* <h1>React Application</h1>
-      <p>The total is: {total}</p> */}
-      {/* <DisplayComponent />
-      <NewComponent />
-      <Employee person={person} employee={employee} numbers={numbers} />
-      <TableComponent />
-      <Clock message="Hello Its" /> */}
-      {/* <FunComponent employee={employee} lastName="XYZ" />
-      
-      */}
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
 
-      {/* <Message status={isActive} /> */}
-      {/* <LoginStatus /> */}
-      {/* <Counter /> */}
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/about">
+            <ContactUs />
+          </Route>
 
-      {/* <UseEffectComponent /> */}
-
-      {/* <CovidCount /> */}
-
-      {/* <RefComponent /> */}
-      {/* <StopWatchRef />
-      <RefInputFocus /> */}
-
-      {/* <RegistrationForm /> */}
-
-      {/* <StateandRef /> */}
-      {/* <StopWatchRef /> */}
-      {/* <Forms /> */}
-
-      {/* <Styling/> */}
-
-      <DemoCSSModules />
-      <button className="button">Another Button</button>
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
+        </Switch>
+        
+      </BrowserRouter>
     </div>
   );
 }
