@@ -24,6 +24,7 @@ import Home from "./routeComponents/Home";
 import About from "./routeComponents/About";
 import ContactUs from "./routeComponents/ContactUs";
 import Navbar from "./routeComponents/Navbar";
+import Blog from "./routeComponents/Blog";
 function App() {
   // let a = 10;
   // let b = 20;
@@ -38,20 +39,18 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
-
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/about">
             <ContactUs />
           </Route>
-
-          <Route path="/contact">
-            <ContactUs />
-          </Route>
+          <Route path="/contact" component={ContactUs} />
+          <Route path="/blog" component={Blog} />
         </Switch>
-        
       </BrowserRouter>
     </div>
   );
