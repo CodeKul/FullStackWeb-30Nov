@@ -8,6 +8,7 @@ function Blog() {
   return (
     <div>
       <h2>Blog {blogid}</h2>
+      
     </div>
   );
 }
