@@ -2,7 +2,6 @@ import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 function Navbar() {
-  
   return (
     <div>
       <nav>
@@ -20,6 +19,12 @@ function Navbar() {
           <li>
             <NavLink className="link" to="/blogs">
               Blogs
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink className="link" to="/gamepage">
+              Play a game
             </NavLink>
           </li>
         </ul>
