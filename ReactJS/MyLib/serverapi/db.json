@@ -1,0 +1,22 @@
+{
+    "books":[
+       {
+           "id":1,
+           "bookName":"The Power of your Subconscious Mind",
+           "authorName":"Joseph Murphy",
+           "rating":4
+       },
+       {
+        "id":2,
+        "bookName":"Autobiography of a Yogi",
+        "authorName":"P Yogananda",
+        "rating":4
+    },
+    {
+        "id":3,
+        "bookName":"Autobiography of a Yogi",
+        "authorName":"P Yogananda",
+        "rating":4
+    }
+    ]
+}
