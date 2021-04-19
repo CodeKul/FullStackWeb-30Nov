@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./BooksList.css";
 import apicalls from "../service/apicalls";
 import { Link } from "react-router-dom";
+import EditBook from "./EditBook";
 function BooksList() {
   const [bookList, setBookList] = useState([]);
 
@@ -25,6 +26,7 @@ function BooksList() {
             <th>Book Name</th>
             <th>Author Name</th>
             <th>Rating</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -33,6 +35,8 @@ function BooksList() {
               <td>{element.bookName}</td>
               <td>{element.authorName}</td>
               <td>{element.rating}</td>
+              <td><EditBook/></td>
+              <td> <button className="btn btn-dark btn-sm">Delete</button></td>
             </tr>
           ))}
         </tbody>
