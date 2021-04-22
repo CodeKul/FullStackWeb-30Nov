@@ -25,6 +25,8 @@ import About from "./routeComponents/About";
 import ContactUs from "./routeComponents/ContactUs";
 import Navbar from "./routeComponents/Navbar";
 import Blog from "./routeComponents/Blog";
+import FragmentComponent from "./FragmentComponent";
+import Table from "./Table";
 function App() {
   // let a = 10;
   // let b = 20;
@@ -36,7 +38,7 @@ function App() {
   // let isLoggedIn = true;
   return (
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -51,7 +53,12 @@ function App() {
           <Route path="/contact" component={ContactUs} />
           <Route path="/blog" component={Blog} />
         </Switch>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      {/* <FragmentComponent/> */}
+
+      <Table/>
+      
     </div>
   );
 }

@@ -19,19 +19,7 @@
       "rating": 4
     },
     {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "bookName": "QA",
+      "bookName": "Today",
       "authorName": "ABC",
       "rating": "3",
       "id": 8
@@ -41,18 +29,8 @@
       "authorName": "Gladwell",
       "rating": "4",
       "id": 9
-    },
-    {
-      "bookName": "p",
-      "authorName": "w",
-      "rating": "4",
-      "id": 10
-    },
-    {
-      "bookName": "av",
-      "authorName": "n",
-      "rating": "3",
-      "id": 11
     }
+    
   ]
+  
 }
