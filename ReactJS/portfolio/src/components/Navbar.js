@@ -9,7 +9,9 @@ function Navbar() {
   //xl --> >=1200px
 
   //line-icons,icons8,fontawesome
-  //https://webgradients.com/
+  //https://webgradients.com/,Unsplash,Brust,Pexels,Stocksnap,Getty Images,Stock up,Cupcake
+  //https://undraw.co/illustrations,stubborn.fun,freeillustrations.xyz,illustrations.co,icons8.co/illustrations
+  //opendoodles.com
   return (
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -35,7 +37,7 @@ function Navbar() {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#about">
                 About
               </a>
             </li>

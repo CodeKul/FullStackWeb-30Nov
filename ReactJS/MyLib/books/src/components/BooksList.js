@@ -41,7 +41,7 @@ function BooksList() {
               <td>{element.authorName}</td>
               <td>{element.rating}</td>
               <td><Link className="btn btn-dark" to={`/editbook/${element.id}`}>Edit</Link></td>
-              <td> <button className="btn btn-dark btn-sm" onClick={()=>deleteBook(element.id)}>Delete</button></td>
+              <td><button className="btn btn-dark btn-sm" onClick={()=>deleteBook(element.id)}>Delete</button></td>
             </tr>
           ))}
         </tbody>
