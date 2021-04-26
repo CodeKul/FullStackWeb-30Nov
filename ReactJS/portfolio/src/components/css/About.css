@@ -1,0 +1,12 @@
+#about .about-text {
+  width: 45%;
+}
+
+.about-text .content .social-icons i {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.about-text .content .social-icons a {
+    color:white;
+}

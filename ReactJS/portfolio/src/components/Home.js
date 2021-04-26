@@ -15,11 +15,11 @@ function Home() {
             neque unde quo blanditiis!
           </p>
         </div>
-        <div className="home-img">
+        <div className="home-img pb-3">
           <img src={home} width="500" height="500" alt="" />
         </div>
       </div>
-      <div className="down-icon">
+      <div className="down-icon pb-5">
         <a href="#about">
           <i class="fas fa-arrow-circle-down fa-2x"></i>
         </a>
