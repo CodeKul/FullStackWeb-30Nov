@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className="home-container">
       <Navbar />
-      <div className="home-content d-flex justify-content-around">
-        <div className="home-text text-white align-self-center">
+      <div className="home-content d-flex justify-content-around flex-wrap">
+        <div className="home-text text-white align-self-center ">
           <h1>Welcome to my Portfolio</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi

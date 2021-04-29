@@ -30,9 +30,17 @@ function Skills() {
       skillName: "Spring Boot",
       skillPercent: "70%",
     },
+    {
+      skillName: "MongoDB",
+      skillPercent: "40%",
+    },
+    {
+      skillName: "MySQL",
+      skillPercent: "40%",
+    },
   ];
   return (
-    <div id="skills" className="bg-dark text-white pt-5">
+    <div id="skills" className="bg-dark text-white pt-5 pb-5">
       <div className="skills-img">
         <div className="row">
           <img src={skillImg} alt="" height="350" width="350" />
@@ -42,7 +50,7 @@ function Skills() {
       <div className="container">
         <div className="row">
           {skills.map((item, id) => (
-            <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
               <div className="skill-text">
                 <h5 className="text-white text-bold">{item.skillName}</h5>
               </div>
