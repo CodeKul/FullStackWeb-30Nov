@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import home from "./css/img/homered.svg";
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container container-fluid">
       <Navbar />
       <div className="home-content d-flex justify-content-around flex-wrap">
         <div className="home-text text-white align-self-center ">

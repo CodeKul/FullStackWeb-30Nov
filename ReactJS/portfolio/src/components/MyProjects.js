@@ -7,22 +7,32 @@ function MyProjects() {
   let projectInfo = [
     {
       id: "one",
-      projName: "Books Application",
-      description: "Book Application using json-server",
-      skillSet: "abc",
-      techStack: ["HTML", "CSS", "Bootstrap", "React JS"],
+      projectName: "Books Application",
+      projectDescription: "Book Application using json-server",
+      projectImg: coffee,
+      techStack: ["HTML", "CSS", "Javascript"],
+      skillSet: "poi",
     },
     {
       id: "two",
-      projName: "Todo Application",
-      descripttion: "Book Application using json-server",
-      techStack: ["HTML", "CSS", "Material UI", "React JS"],
+      projectName: "Portfolio Application",
+      projectDescription: "Book Application using json-server",
+      projectImg: coffee,
+      techStack: ["HTML", "CSS", "Javascript", "React js", "Express"],
     },
     {
       id: "three",
-      projName: "Todo Application",
-      descripttion: "Book Application using json-server",
-      techStack: ["HTML", "CSS", "Material UI", "React JS"],
+      projectName: "TODO Application",
+      projectDescription: "Book Application using json-server",
+      projectImg: coffee,
+      techStack: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Bootstrap",
+        "React js",
+        "Express",
+      ],
     },
   ];
 
@@ -34,10 +44,10 @@ function MyProjects() {
           <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12" key={id}>
             <div className="card" style={{ width: "100%" }}>
               <div className="card-header text-center fw-bold">
-                {item.projName}
+                {item.projectName}
                 <div className="card-img-top">
                   <img
-                    src={coffee}
+                    src={item.projectImg}
                     className="img-fluid"
                     height="300"
                     width="100%"
@@ -67,15 +77,13 @@ function MyProjects() {
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        <p>
-                          {item.description}
-                          <ul>
-                            {item.techStack.map((tech, id) => (
-                              <li>{tech}</li>
-                            ))}
-                          </ul>
-                          {item.skillSet ? item.skillSet : ""}
-                        </p>
+                        <p>{item.projectDescription}</p>
+                        <ul>
+                          {item.techStack.map((element, id) => (
+                            <li key={id}>{element}</li>
+                          ))}
+                        </ul>
+                        {item.skillSet ? <p>{item.skillSet}</p> : ""}
                       </div>
                     </div>
                   </div>

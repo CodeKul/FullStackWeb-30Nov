@@ -1,6 +1,8 @@
 .home-container {
   background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
-  height: 100vh;
+  height: 100%;
+  
+  padding:10px;
 }
 
 .home-content {
@@ -15,6 +17,7 @@
   position: absolute;
   top: 90%;
   left: 50%;
+  
 }
 .down-icon a {
   font-size: 22px;
