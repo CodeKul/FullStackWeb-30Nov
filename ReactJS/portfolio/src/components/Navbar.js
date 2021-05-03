@@ -27,7 +27,9 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
+            <i class="fas fa-bars color-white"></i>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -47,7 +49,7 @@ function Navbar() {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#contact">
                 Contact
               </a>
             </li>

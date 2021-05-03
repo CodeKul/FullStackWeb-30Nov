@@ -1,8 +1,8 @@
 .home-container {
   background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
   height: 100%;
-  
-  padding:10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .home-content {
@@ -14,10 +14,8 @@
 }
 
 .down-icon {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  
+  display: flex;
+  justify-content: center;
 }
 .down-icon a {
   font-size: 22px;
@@ -26,4 +24,10 @@
 .down-icon a i:hover {
   transform: translateY(5px);
   transition: transform 1s;
+}
+
+@media (max-width: 850px) {
+  .home-content .home-text {
+    width: 100%;
+  }
 }

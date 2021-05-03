@@ -2,8 +2,8 @@ import React from "react";
 import contact from "./css/img/contact-red.svg";
 function Contact() {
   return (
-    <footer className="bg-dark text-white">
-      <h1 className="text-bold text-white text-center">Get in Touch</h1>
+    <footer id="contact" className="bg-dark text-white p-3">
+      <h1 className="text-bold text-white text-center mb-5">Get in Touch</h1>
       <div className="row justify-content-around">
         <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12">
           <img
@@ -56,7 +56,7 @@ function Contact() {
               Send a message
             </button>
           </form>
-          <div className="social-icons d-flex justify-content-around">
+          <div className="social-icons d-flex justify-content-around mt-2">
             <div className="mail">
               <i class="fas fa-envelope"></i>
             </div>

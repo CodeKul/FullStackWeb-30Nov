@@ -6,7 +6,7 @@ function About() {
     <>
       <div id="about" className="bg-dark text-white pb-5">
         <h1 className="text-center fw-bold pb-5 pt-3">About Me</h1>
-        <div className="d-flex justify-content-around">
+        <div className="about-content d-flex justify-content-around p-2 ">
           <div className="about-text d-flex align-items-center">
             <div className="content">
               <h2>Hello , I'm Sucheta</h2>
@@ -40,9 +40,9 @@ function About() {
           <div className="about-photo">
             <img
               src={myPhoto}
-              className="rounded"
+              className="rounded img-fluid"
               alt=""
-              width="350"
+              
               height="380"
             />
           </div>

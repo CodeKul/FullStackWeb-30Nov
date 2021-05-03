@@ -38,10 +38,10 @@ function MyProjects() {
 
   return (
     <div id="myprojects" className="bg-dark p-5">
-      <h1 className="text-bold text-center text-white">My Projects</h1>
+      <h1 className="text-bold text-center text-white mb-4">My Projects</h1>
       <div className="row">
         {projectInfo.map((item, id) => (
-          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12" key={id}>
+          <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4" key={id}>
             <div className="card" style={{ width: "100%" }}>
               <div className="card-header text-center fw-bold">
                 {item.projectName}
