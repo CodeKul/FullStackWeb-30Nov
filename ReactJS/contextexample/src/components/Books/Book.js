@@ -1,11 +1,11 @@
 import React from "react";
 
-function Book({ bName, bPrice }) {
+function Book({ bookName ,price}) {
   return (
     <div>
       <ul>
-        <li>{bName}</li>
-        <li>{bPrice}</li>
+        <li>{bookName}</li>
+        <li>{price}</li>
       </ul>
     </div>
   );

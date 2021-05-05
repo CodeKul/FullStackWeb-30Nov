@@ -4,6 +4,7 @@ import BooksList from "./components/Books/BooksList";
 import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import Navbar from "./components/Books/Navbar";
+import { BookProvider } from "./components/Books/BookContext";
 
 function App() {
   // const [myName, setMyName] = useState("ABC");
@@ -15,8 +16,10 @@ function App() {
     // </div>
 
     <div className="App">
-      <Navbar />
-      <BooksList />
+      <BookProvider>
+        <Navbar />
+        <BooksList />
+      </BookProvider>
     </div>
   );
 }

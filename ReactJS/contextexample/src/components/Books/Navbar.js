@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { BookContext } from "./BookContext";
 
-function Navbar({ books }) {
+function Navbar() {
+  const [books, setBooks] = useContext(BookContext);
   return (
     <div style={{ backgroundColor: "lightblue" }}>
       <h1>Nav</h1>
