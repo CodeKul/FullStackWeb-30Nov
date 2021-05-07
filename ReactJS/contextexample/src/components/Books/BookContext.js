@@ -8,12 +8,10 @@ export function BookProvider(props) {
     {
       bookName: "Book1",
       price: "399",
-      id: "1",
     },
     {
       bookName: "Book2",
       price: "199",
-      id: "1",
     },
   ]);
   return (

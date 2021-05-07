@@ -1,10 +1,10 @@
 import React from "react";
 
-function Book({ bookName ,price}) {
+function Book({ bookName ,price,id}) {
   return (
     <div>
       <ul>
-        <li>{bookName}</li>
+        <li key={id}>{bookName}</li>
         <li>{price}</li>
       </ul>
     </div>

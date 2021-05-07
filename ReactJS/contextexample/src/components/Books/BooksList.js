@@ -8,9 +8,9 @@ function BooksList() {
     <div>
       <h1></h1>
 
-      {books.map((book, id) => (
+      {books && books.map((book, id) => (
         <>
-          <Book bookName={book.bookName} price={book.price} />
+          <Book bookName={book.bookName} price={book.price} key={book.id}/>
         </>
       ))}
     </div>
