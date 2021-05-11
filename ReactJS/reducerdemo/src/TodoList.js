@@ -13,15 +13,15 @@ function todoReducer(state, action) {
       return {
         todoList: state.todoList.map((t, id) =>
           id === action.payload ? { ...t, completed: !t.completed } : t
-       
-          ),
-          
+        ),
       };
-     
+
     default:
       return state;
   }
 }
+
+//MobX,Redux,easy-peasy,react-redux
 function TodoList() {
   const [todoItem, setTodoItem] = useState("");
   const [state, dispatch] = useReducer(todoReducer, {
@@ -47,12 +47,8 @@ function TodoList() {
       <div>
         {state.todoList.map((t, id) => (
           <p
-            key={id}
-            onClick={() => {
-                console.log("inside strike")
-                dispatch({ type: "strike-todo", payload: id })
-            }}
-            style={{ textDecoration: state.completed ? "line-through" : "" }}
+            onClick={() => dispatch({ type: "strike-todo", payload: id })}
+            style={{ textDecoration: t.completed ? "line-through" : "" }}
           >
             {t.todo}
           </p>
@@ -63,3 +59,16 @@ function TodoList() {
 }
 
 export default TodoList;
+
+{
+  /* <p
+            key={id}
+            onClick={() => {
+              console.log("inside strike");
+              dispatch({ type: "strike-todo", payload: id });
+            }}
+            style={{ textDecoration: completed ? "line-through" : "" }}
+          >
+            {t.todo}
+          </p> */
+}
