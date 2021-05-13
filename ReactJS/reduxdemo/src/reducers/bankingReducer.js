@@ -1,6 +1,7 @@
 const initialState = {
   balance: 0,
   isCurrent: false,
+  
 };
 
 export const bankingReducer = (state = initialState, action) => {

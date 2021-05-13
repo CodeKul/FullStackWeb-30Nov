@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { deposit } from "../actions/bankActions";
 
 function BankingOperations() {
   const [amount, setAmount] = useState();
@@ -17,7 +18,7 @@ function BankingOperations() {
         <button
           className="btn btn-secondary"
           type="button"
-          onClick={() => dispatch({ type: "deposit", payload: amount })}
+          onClick={() => dispatch(deposit(amount))}
         >
           Deposit
         </button>
