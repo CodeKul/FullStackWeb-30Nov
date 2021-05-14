@@ -2,7 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function AccountType() {
-  const current = useSelector((state) => state.isCurrent);
+  const current = useSelector((state) => state.banking.isCurrent);
+  console.log(current)
   const store = useSelector((state) => state);
   console.log(store);
   return (
